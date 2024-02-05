@@ -9,23 +9,29 @@
 </head>
 <body>
     <div class="navbar">
-        <a  href=""onclick="popup()" class="btn"><img class="profile"  src="	https://i1.sndcdn.com/artworks-000108385646-kfmxvw-t500x500.jpg" alt=""></a>
+        <button href="#" onclick="popup()" class="btn"><img class="profile" src="https://i1.sndcdn.com/artworks-000108385646-kfmxvw-t500x500.jpg" alt=""></button>
     </div>
+    
     <div class="Setting">
+        <button class="close" onclick="closePopup()"><i class="fas fa-times" style="color: #000000;"></i></button>
         <div class="photos"><img class="photo" src="https://i1.sndcdn.com/artworks-000108385646-kfmxvw-t500x500.jpg" alt=""></div>
         <div class="tag"><a href="" class="account">miakhali@gamil.com</a></div>
-        <div class="MYA"><i class="fa-sharp fa-solid fa-file-invoice"style="color: #000000;"></i><a href="" class="manage">Manage Your Account</a> </i></div>
+        <div class="MYA"><i class="fas fa-file-invoice" style="color: #000000;"></i><a href="" class="manage">Manage Your Account</a></div>
         <div class="line"></div>
-        <div class="AS"><i class="fa-sharp fa-solid fa-gear" style="color: #0a0a0a;"></i><a href="" class="accountSet">Account Setting</a></div>
-        <div class="PM"><i class="fa-solid fa-key" style="color: #000000;"></i><a href="" class="password">Password Manager</a></div> 
+        <div class="AS"><i class="fas fa-gear" style="color: #0a0a0a;"></i><a href="" class="accountSet">Account Setting</a></div>
+        <div class="PM"><i class="fas fa-key" style="color: #000000;"></i><a href="" class="password">Password Manager</a></div>
     </div>
-    <script>
-     const b = document.querySelector(".btn");
-const c = document.querySelector(".Setting");
 
-  function popup(){
-    c.classList.add("active")
-  }
-            </script>
+    <script>
+        const c = document.querySelector(".Setting");
+
+        function popup() {
+            c.classList.add("active");
+        }
+
+        function closePopup() {
+            c.classList.remove("active");
+        }
+    </script>
 </body>
 </html>
