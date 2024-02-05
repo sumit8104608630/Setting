@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Adding a common font family */
+}
+
+.profile {
+    width: 30px;
+    height: 70%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.btn {}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(243, 173, 135);
+    height: 30%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.photos,
+.tag {
+    text-align: center;
+}
+
+.photo,
+.active {
+    height: 10%;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.Setting {
+    position: relative;
+    left: 75%;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    box-shadow: 0 0 30px 0 rgb(130, 130, 130);
+}
+
+.Setting.active {
+    position: relative;
+    left: 75%;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: 2s ease;
+    box-shadow: 0 0 30px 0 rgb(130, 130, 130);
+}
+
+.account {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin: 10px 50px;
+    padding: 5px;
+}
+
+.line {
+    height: 1.5px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+.manage,
+.accountSet,
+.password {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.MYA {
+    padding-left: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.AS {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.PM {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .Setting,
+    .Setting.active {
+        left: 10%;
+        margin: 20px auto;
+    }
+}
+@media only screen and (max-width: 1359px)
+{
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: end;
+    }
+    .Setting,
+    .Setting.active {
+        left: 5%;
+        margin: 20px auto;
+    }
+}
